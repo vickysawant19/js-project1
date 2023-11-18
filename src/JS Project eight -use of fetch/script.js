@@ -1,4 +1,4 @@
-url = `https://source.unsplash.com/random/400x400`
+url = `https://source.unsplash.com/random/200x300`
 
 
 const imageBox = document.getElementById('imageBox')
@@ -6,12 +6,12 @@ const imageBox = document.getElementById('imageBox')
 
 
 
-function createEl(){
+function createEl(val = 3){
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < val; i++) {
     const imgElem = document.createElement('img')
 
-    imgElem.className = 'object-cover aspect-square min-h border'
+    imgElem.className = 'object-cover aspect-square min-h-96 w-96 border'
     imgElem.id = `${new Date().getTime()}`
 
     fetchImg(imgElem)
@@ -32,11 +32,50 @@ function fetchImg(imgT){
   
 }
 
+let lastScrollTop = 0;
+let isScrollPuase = false;
+
+function handleScroll() {
+
+  if(!isScrollPuase){
+
+    const currentScrollTop = window.scrollY;
+    console.log(`currentScrollTop:${currentScrollTop}`)
+    console.log(`lastScrollTop:${lastScrollTop}`)
+
+    isScrollPuase = true;
+    
+    
+
+    // Check if scrolling down
+    if (currentScrollTop > lastScrollTop) {
+   
+      console.log('Scrolled down!');
+      createEl(6);
+      
+    }
+
+    // Update the last scroll position
+    lastScrollTop = currentScrollTop;
+    setTimeout(()=>{
+      isScrollPuase = false;
+
+    },2000)
+    
+
+  }
+  
+}
+
+// Add the scroll event listener
+window.addEventListener('scroll', handleScroll);
 
 
-createEl();
 
-setInterval(createEl , 300)
+
+createEl(9);
+
+// setInterval(createEl , 3000)
 
 
 
