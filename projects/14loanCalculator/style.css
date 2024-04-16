@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+    color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 2px 4px 10px black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: aqua;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    font-size: 25px;
+    padding: 2px;
+}
+
+.container label{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+
+.monthly-pay {
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}

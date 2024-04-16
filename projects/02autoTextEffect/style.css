@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "kalam",cursive ;
+    background-color: #212121;
+    color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+span {
+  color: rgb(197, 94, 71);
+}

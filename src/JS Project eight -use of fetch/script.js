@@ -51,7 +51,7 @@ function handleScroll() {
     if (currentScrollTop > lastScrollTop) {
    
       console.log('Scrolled down!');
-      createEl(6);
+      createEl(12);
       
     }
 
@@ -73,7 +73,7 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-createEl(9);
+createEl(12);
 
 // setInterval(createEl , 3000)
 
