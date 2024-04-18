@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+    color: aliceblue;
+    height: 100vh;
+     width: 100%;
+    font-family: sans-serif;
+
+}
+
+.navbar {
+    background-color: rgb(80, 200, 86);
+    color: #ffffff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px black;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    transition: all .9s ;
+
+}
+
+.navbar.active {
+    background-color: white;
+}
+
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.navbar li {
+    color: rgb(5, 21, 81);
+}
+.navbar li:hover {
+    color: rgb(246, 8, 8);
+    cursor: pointer;
+}
+
+.hero {
+    background-image: url("https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
+    height:90%;
+    background-size: cover;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+
+.bottom-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.bottom-container p {
+    margin-top: 40px;
+    letter-spacing: 30px;
+    
+}
+
+.bottom-container h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+

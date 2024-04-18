@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right, green 40%,black);
+
+    /* background-color: #212121; */
+    color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+     border-radius: 10px;
+     box-shadow:2px 2px 10px black;
+    background:linear-gradient(to top left,rgba(0, 128, 0, 0.592),rgba(0, 0, 0, 0.4))
+}
+
+.container .heading {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.container input {
+    margin-bottom: 10px;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.container .btn {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(8, 0, 255, 0.978);
+    color:white;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    opacity: 80%;
+    transition: opacity .3s ease-in-out;
+}
+
+.container .info-text {
+    text-align: start;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+#bmi-result {
+    color: white;
+    
+}
+
+.container span {
+    /* background-color: rgb(255, 99, 47); */
+    border-radius: 10px;
+    padding: 5px;
+   
+}
