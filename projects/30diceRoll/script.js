@@ -17,7 +17,7 @@ function rollDice() {
     diceEl.classList.remove("dice-animation");
   }, 1000);
   const histEl = document.createElement("li");
-  histEl.innerHTML = `roll ${rollCount}: <span>${diceCode[diceNo]}</span>`;
+  histEl.innerHTML = `Roll ${rollCount}: <span>${diceCode[diceNo]}</span>`;
   rollHistEl.appendChild(histEl);
   rollCount++;
 }
