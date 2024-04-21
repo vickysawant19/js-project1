@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Random Quote - by Vitthal Sawant</title>
+  </head>
+  <body>
+    <div class="container quoteArea">
+      <div class="ribbon ribbon-top-left">
+        <span id="category">category</span>
+      </div>
+      <h2>Quote of the day</h2>
+      <div class="quote">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur,
+        aspernatur.
+      </div>
+      <hr style="height: 1px; background-color: black" width="100%" />
+      <div class="buttons">
+        <div class="icons">
+          <i onclick="likeQuote()" id="like" class="fa-solid fa-heart"></i>
+          <i onclick="showList()" id="list" class="fa-solid fa-list"></i>
+          <i class="fa-solid fa-copy"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <button onclick="genrateQuote()" id="generate">New Quote</button>
+      </div>
+    </div>
+    <div class="container favoriteList">
+      <h1>Favorite Quote List</h1>
+      <i onclick="goBack()" id="back-btn" class="fa-solid fa-arrow-left"></i>
+      <ul class="favoriteData">
+        <i onclick="removeAllList()" class="fa-solid fa-broom"></i>
+      </ul>
+      <div class="quote-container"></div>
+
+      <!-- <div class="quoteItem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        ipsum.
+      </div> -->
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
