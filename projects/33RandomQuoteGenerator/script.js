@@ -50,6 +50,19 @@ function showQuote(quoteData) {
   }</div>`;
 }
 
+function copytext() {
+  navigator.clipboard.writeText(quoteEl.innerText);
+  alert("text copied");
+}
+
+function shareOnX() {
+  let encodedQuote = encodeURIComponent(quoteEl.innerText);
+  let xUrl = `https://twitter.com/intent/tweet?text=${encodedQuote}`;
+
+  // Open the URL in a new tab
+  window.open(xUrl, "_blank");
+}
+
 function likeQuote() {
   if (isLoading) {
     return;

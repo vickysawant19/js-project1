@@ -163,6 +163,7 @@ body {
 
 .container.favoriteList {
     display: none;
+    height: 80vh;
     max-width: 400px;
     padding: 30px;
     position: relative;
@@ -175,7 +176,7 @@ body {
 }
 
 .quote-container {
-    max-height: 40vh;
+    min-height: 80%;
     overflow-y: scroll;
     scrollbar-width: thin;
     
