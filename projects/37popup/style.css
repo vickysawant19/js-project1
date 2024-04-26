@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #212121;
+    color: aliceblue;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.btn{
+    position: fixed;
+    height: 50px;
+    inset: 0;
+    margin: auto;
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: none;
+    background : linear-gradient(to top right , blue, rgb(246, 246, 246))
+}
+
+
+.subscribe-form{
+    
+    width: 400px;
+    height: fit-content;
+    inset: 0;
+    margin: auto;
+    position: fixed;
+    background-color: white;
+     border-radius: 20px;
+     color: black;
+     background: linear-gradient(to bottom left, lightblue 20%,lightgreen);
+     padding: 20px;
+     scale: 0;
+     transition: scale .2s;
+     
+}
+
+.subscribe-form.show-form {
+  scale: 1;
+  transition: scale .3s;
+
+}
+
+.subs-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.subs-img {
+    background: radial-gradient(orange,rgb(246, 213, 0));
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.subs-bottom {
+   
+    display: flex;
+    width: 100%;
+}
+
+.subs-input {
+    border: none;
+    outline: none;
+   flex: 2;
+   font-size: 1rem;
+   border-radius: 40px 0px 0px 40px;
+   padding: 10px;
+}
+
+.subs-btn {
+    border: none;
+    background-color: blue;
+    color: white;
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.subs-btn:hover {
+    background-color: rgba(0, 0, 255, 0.495);
+}
+
+.subs-close{
+    font-size: 2rem;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    color: rebeccapurple;
+}
